@@ -1,0 +1,33 @@
+*** PERSONAL NOTES ***
+
+- data-* allows for custom data private
+  - this is a global attribute
+  - can use JS to call upon it
+  - ex: [variable].getAttribute("data-[customGivenName])
+- kdb tag is used to define keyboard input
+  - form of formatting just like <strong> or <em> or <code>  
+- alt+shift+downarrow to duplicate line or selection
+- if greyed out audio controls, assume src link is broken
+- use listeners for keyup event
+  - can listen on window, div, etc. 
+  - window.addEventListener(event, function)
+    - ex. window.addEventListener('keydown', (e) => {
+      console.log(e);
+    })
+- background-size of cover will make smaller picture fit whole screen
+  - no-repeat attribute for background will stop repetition
+- copied some css text to save time
+- keyCode will associate with ascii code for key
+  - nevermind, keyCode was deprecated
+  - https://stackoverflow.com/questions/35394937/keyboardevent-keycode-deprecated-what-does-this-mean-in-practice
+    - was event.Keycode === 13 is now event.key === "Enter"
+  - e.key.charCodeAt(e.key) will give ascii code
+  - used toLowerCase() to work if capslock enabled
+- template literal back ticks ``
+- querySelector() returns first element matching CSS querySelector
+  - querySelectorAll() returns all matches instead
+  - both will throw SYNTAX_ERR if invalid
+- key.classList.add('playing'); // jQuery equivalent is key.addClass('playing');
+- transition end events for css transition endings
+- forEach allows for function on each member of array
+- use e.target for specific event if looping through events
